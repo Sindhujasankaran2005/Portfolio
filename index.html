@@ -1,194 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #84a6e9;
-        }
-
-        header {
-            background-color: #941919;
-            color: #fff;
-            text-align: center;
-            padding: 2rem 0;
-            position: relative; /* Add this */
-        }
-
-        .header-content h1 {
-            font-size: 2.5rem;
-        }
-
-        /* Add styles for the round profile picture */
-        .profile-picture {
-            width: 100px; /* Adjust the size as needed */
-            height: 100px;
-            border-radius: 75%; /* Create a circular shape */
-            object-fit: cover; /* To ensure the image fills the circular area */
-            position: absolute; /* Add this */
-            top: 75px; /* Adjust top position as needed */
-            left: 75px; /* Adjust left position as needed */
-        }
-
-        nav {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-        }
-
-        .section-content {
-            background-color: #fff;
-            padding: 2rem;
-            margin: 1rem;
-            border-radius: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: justify;
-        }
-
-        .download-button {
-            background-color: #333;
-            color: #fff;
-            padding: 0.5rem 1rem;
-            text-decoration: none;
-            border-radius: 20px;
-            display: inline-block;
-            margin-top: 10px;
-            align-self: center;
-        }
-
-        .download-button:hover {
-            background-color: #555;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem 0;
-            background-color: #333;
-            color: #fff;
-        }
-
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sindhuja S. — aspiring Data Analyst portfolio showcasing projects, skills, education and training.">
+  <title>Sindhuja S. | Data Analyst Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <!-- Add your profile picture here -->
-            <img src="sindhu.jpg" alt="Your Profile Picture" class="profile-picture">
-            <h1>Sindhuja S</h1>
-            <p>Am Bachelor of Computer Application</p>
-        </div>
-    </header>
+  <header class="navbar">
+    <div class="nav-container">
+      <a class="logo" href="#home" aria-label="Sindhuja home">SS<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a class="active" href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#journey">Education</a><a href="#contact">Contact ↗</a>
+      </nav>
+      <a class="nav-resume" href="#contact"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
+    </div>
+  </header>
 
-    <nav>
-        <ul>
-            <li><a href="#About">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
-           
-        </ul>
-    </nav>
 
-    <section id="about">
-        <div class="section-content">
-            <h2>About Me</h2>
-            <p>I'm a <b>BCA student</b> with a passion for technology and programming. I enjoy learning about software development, web technologies, and problem-solving. 
-                I am always eager to explore new trends in the tech world and improve my skills. 
-                In my free time, I love [mention hobbies or interests, e.g., reading, coding, designing, etc.].
-                
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shape shape-a"></div><div class="hero-shape shape-b"></div>
+      <div class="hero-wrap">
+        <div class="hero-copy">
+          <p class="open-pill"><span class="status-dot"></span> Open to Opportunities</p>
+          <p class="intro">Hello, I'm</p>
+          <h1>Sindhuja <span>S.</span></h1>
+          <h2>Aspiring Data Analyst</h2>
+          <p class="hero-desc">I turn data into meaningful insights through analysis, visualization, and curiosity. I enjoy exploring patterns, understanding trends, and transforming numbers into stories that support better decisions.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#projects">Explore My Projects <i class="fa-solid fa-arrow-right"></i></a><a class="btn btn-secondary" href="#contact">Get in Touch</a></div>
+          <div class="social-links" aria-label="Social links"><a href="https://github.com/Sindhujasankaran2005" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a><a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn profile - update link"><i class="fa-brands fa-linkedin-in"></i></a><a href="mailto:sindhujasankaran2005@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></div>
         </div>
+        <div class="hero-art">
+          <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+          <div class="avatar-card"><div class="avatar-head"><span>PROFILE / DATA & INSIGHTS</span><i class="fa-solid fa-arrow-up-right-from-square"></i></div><div class="avatar-art"><div class="avatar-glow"></div><div class="avatar-initials">SS</div><div class="avatar-bars"><span></span><span></span><span></span><span></span><span></span></div><div class="avatar-caption">Curiosity <b>×</b> Analytics</div></div><div class="avatar-bottom"><span><b>Sindhuja S.</b><small>Data Analysis · Visualization</small></span><span class="avatar-number">01 / 01</span></div></div>
+          <div class="float-chip chip-analysis"><i class="fa-solid fa-chart-line"></i> Data Analysis</div><div class="float-chip chip-sql"><i class="fa-solid fa-database"></i> SQL</div>
+        </div>
+        <aside class="quick-card"><h3><i class="fa-solid fa-chart-column"></i> Quick Info</h3><div class="quick-item"><i class="fa-solid fa-graduation-cap"></i><span><b>B.C.A.</b><small>First Class with Distinction · CGPA 8.4/10</small></span></div><div class="quick-item"><i class="fa-solid fa-location-dot"></i><span>Chennai, Tamil Nadu, India</span></div><div class="quick-item"><i class="fa-solid fa-bullseye"></i><span>Data Analysis &amp; BI</span></div><div class="quick-item"><i class="fa-solid fa-circle-check green"></i><span>Open to Opportunities</span></div></aside>
+      </div>
+      <div class="hero-foot"><span>CHENNAI, INDIA</span><a href="#about">SCROLL TO EXPLORE <i class="fa-solid fa-arrow-down"></i></a><span>DATA · LOGIC · INSIGHTS</span></div>
     </section>
 
-    <section id="education">
-        <div class="section-content">
-            <h2>Education</h2>
-            <p>Queen Marys - BCA</p>
-            
-            
-        </div>
+
+    <section class="section split-section" id="about">
+      <div class="section-wrap split-grid">
+        <div class="about-side"><p class="section-label"><span>01</span> ABOUT ME</p><h2>Curious about data.<br>Focused on <span>insights.</span></h2><p class="about-text">I'm a B.C.A. graduate with a growing passion for data analytics and business intelligence. I enjoy cleaning and exploring datasets, identifying patterns, and presenting findings in clear, useful visualizations. I am continuously learning and building projects to strengthen my analytical skills.</p><div class="strength-tags"><span>Problem-solving</span><span>Continuous learner</span><span>Curiosity</span></div></div>
+        <div class="about-details"><div class="detail-row"><i class="fa-solid fa-graduation-cap"></i><span><b>Degree</b><small>Bachelor of Computer Applications</small></span></div><div class="detail-row"><i class="fa-solid fa-location-dot"></i><span><b>Location</b><small>Chennai, Tamil Nadu, India</small></span></div><div class="detail-row"><i class="fa-solid fa-bullseye"></i><span><b>Focus</b><small>Data Analytics &amp; Business Intelligence</small></span></div><div class="detail-row"><i class="fa-solid fa-circle-check green"></i><span><b>Status</b><small>Open to entry-level roles &amp; internships</small></span></div></div>
+      </div>
     </section>
 
-    <section id="skills">
-        <div class="section-content">
-            <h2>Skills</h2>
-            <ul>
-                <li>Html</li>
-                <li>CSS</li>
-                <li>Python</li>
-                <li>java</li>
-                <li>c++</li>
-                <li>Java script</li>
-            </ul>
-        </div>
-    </section>
 
-    <section id="projects">
-        <div class="section-content">
-            <h2>Projects</h2>
-            <ul>
-                <li><a href="#">Library Management System Software</a></li>
-                <li><a href="#">Language Learning Website</a></li>
-                <li><a href="#">College Portal</a></li> 
-                <!-- Add more project links here -->
-            </ul>
-        </div>
-    </section>
+    <section class="section skills-section" id="skills"><div class="section-wrap"><p class="section-label"><span>02</span> SKILLS &amp; TOOLS</p><div class="section-head"><h2>My Technical Toolkit</h2><p>Tools I use to explore, analyze, and visualize data.</p></div><div class="skills-grid">
+      <article class="skill-card"><div class="skill-icon python"><i class="fa-brands fa-python"></i></div><h3>Python</h3><p>Data cleaning &amp; analysis</p><div class="tags"><span>Pandas</span><span>NumPy</span></div></article>
+      <article class="skill-card"><div class="skill-icon sql"><i class="fa-solid fa-database"></i></div><h3>SQL</h3><p>Queries &amp; data management</p><div class="tags"><span>MySQL</span><span>Joins</span></div></article>
+      <article class="skill-card"><div class="skill-icon bi"><i class="fa-solid fa-chart-column"></i></div><h3>Power BI</h3><p>Dashboards &amp; reports</p><div class="tags"><span>DAX</span><span>Power Query</span></div></article>
+      <article class="skill-card"><div class="skill-icon excel"><i class="fa-solid fa-file-excel"></i></div><h3>Excel</h3><p>Spreadsheet analysis</p><div class="tags"><span>Pivot Tables</span><span>Charts</span></div></article>
+      <article class="skill-card"><div class="skill-icon viz"><i class="fa-solid fa-chart-line"></i></div><h3>Visualization</h3><p>Data storytelling &amp; charts</p><div class="tags"><span>Matplotlib</span><span>Seaborn</span></div></article>
+      <article class="skill-card"><div class="skill-icon dev"><i class="fa-solid fa-code"></i></div><h3>Tools</h3><p>Development &amp; workflow</p><div class="tags"><span>Git</span><span>GitHub</span><span>VS Code</span></div></article>
+    </div></div></section>
 
-    <section id="resume">
-    
-        <div class="section-content">
-            <center>
-            <h2>Resume</h2>
-            <a href="sindhuja.pdf" target="_blank" class="download-button">Download CV</a>
-        </center>
-        </div>
-        
-    </section>
 
-    <footer>
-        <p>&copy; 2025 Sindhuja S</p>
-    </footer>
+    <section class="section projects-section" id="projects"><div class="section-wrap"><p class="section-label"><span>03</span> PROJECTS</p><div class="section-head"><h2>Turning Data into Insights</h2><p>A selection of data analytics, dashboard, and application projects.</p></div><div class="projects-grid">
+      <article class="project-card"><div class="project-art art-olympic"><span class="art-label">POWER BI · SQL</span><div class="olympic-rings"><span class="ring r1"></span><span class="ring r2"></span><span class="ring r3"></span><span class="ring r4"></span><span class="ring r5"></span></div><div class="mini-bars"><i></i><i></i><i></i><i></i><i></i></div></div><div class="project-body"><span class="project-no">PROJECT 01</span><h3>Indian Olympic Medalists Dashboard</h3><p>Explored India's Olympic medal history and athlete performance to understand medal trends and sport-wise distribution.</p><div class="tags"><span>Power BI</span><span>SQL</span></div><a class="project-link" href="https://github.com/Sindhujasankaran2005" target="_blank" rel="noopener">Explore on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>
+      <article class="project-card"><div class="project-art art-zomato"><span class="art-label">EXPLORATORY DATA ANALYSIS</span><div class="zomato-mark">zomato<span>.</span></div><div class="chart-preview"><i></i><i></i><i></i><i></i><i></i><i></i></div></div><div class="project-body"><span class="project-no">PROJECT 02</span><h3>Zomato Data Analysis</h3><p>Analyzed restaurant ratings, cuisines, and price ranges to identify patterns and explore restaurant trends.</p><div class="tags"><span>Python</span><span>Pandas</span><span>Seaborn</span><span>Matplotlib</span></div><a class="project-link" href="https://github.com/Sindhujasankaran2005" target="_blank" rel="noopener">Explore on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>
+      <article class="project-card"><div class="project-art art-hr"><span class="art-label">BUSINESS INTELLIGENCE</span><div class="hr-title">HR <small>WORKFORCE INSIGHTS</small></div><div class="hr-lines"><i></i><i></i><i></i><i></i></div><div class="hr-donut"></div></div><div class="project-body"><span class="project-no">PROJECT 03</span><h3>HR Analysis Dashboard</h3><p>Visualized HR data and reviewed employee metrics to explore workforce trends and support data-informed decisions.</p><div class="tags"><span>Power BI</span><span>Excel</span></div><a class="project-link" href="https://github.com/Sindhujasankaran2005" target="_blank" rel="noopener">Explore on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>
+      <article class="project-card"><div class="project-art art-school"><span class="art-label">BUSINESS &amp; PLANNING</span><div class="school-graphic"><i class="fa-solid fa-school"></i><div class="school-bars"><b></b><b></b><b></b><b></b></div></div><div class="school-note">ONLINE EDUCATION ANALYTICS</div></div><div class="project-body"><span class="project-no">PROJECT 04</span><h3>School ERP — Business Insights</h3><p>Worked on an illustrative business analysis for school ERP targets, revenue, expenses, profit, and client acquisition planning.</p><div class="tags"><span>Power BI</span><span>DAX</span></div><a class="project-link" href="https://github.com/Sindhujasankaran2005" target="_blank" rel="noopener">Explore on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>
+      <article class="project-card"><div class="project-art art-toy"><span class="art-label">DATABASE APPLICATION</span><div class="toy-icon"><i class="fa-solid fa-cubes"></i><i class="fa-solid fa-puzzle-piece"></i><i class="fa-solid fa-robot"></i></div><div class="toy-label">TOY SHOP MANAGEMENT</div></div><div class="project-body"><span class="project-no">PROJECT 05</span><h3>Toy Shop Management System</h3><p>Built a web-based toy shop management project with database connectivity and core shop management features.</p><div class="tags"><span>PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span></div><a class="project-link" href="https://github.com/Sindhujasankaran2005" target="_blank" rel="noopener">Explore on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>
+    </div><p class="projects-note"><i class="fa-solid fa-circle-info"></i> Project links currently point to my GitHub profile. Replace each with its individual repository link when available.</p></div></section>
 
-    <script>
-        // Smooth scrolling to section when clicking on navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
 
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
+    <section class="section journey-section" id="journey"><div class="section-wrap"><p class="section-label"><span>04</span> EDUCATION &amp; EXPERIENCE</p><div class="section-head"><h2>My Academic Journey</h2><p>Education, hands-on training, and learning experiences.</p></div><div class="journey-grid">
+      <article class="journey-card"><div class="journey-icon"><i class="fa-solid fa-graduation-cap"></i></div><div class="journey-date">2026</div><span class="journey-type">DEGREE</span><h3>Bachelor of Computer Applications</h3><p>University of Madras · Queen Mary's College, Chennai</p><strong>First Class with Distinction · CGPA 8.4/10</strong></article>
+      <article class="journey-card"><div class="journey-icon"><i class="fa-solid fa-briefcase"></i></div><div class="journey-date">2025</div><span class="journey-type">INTERNSHIP</span><h3>Python with Data Analytics Intern</h3><p>Engineering Monk, Avadi</p><strong>Python · Data Cleaning · Dashboard work</strong></article>
+      <article class="journey-card"><div class="journey-icon"><i class="fa-solid fa-chart-pie"></i></div><div class="journey-date">2026 — Ongoing</div><span class="journey-type">TRAINING</span><h3>Data Analytics Course</h3><p>SLA Institute, Chennai</p><strong>Python · SQL · Excel · Power BI</strong></article>
+      <article class="journey-card"><div class="journey-icon"><i class="fa-solid fa-laptop-code"></i></div><div class="journey-date">2025</div><span class="journey-type">TRAINING</span><h3>Python with Data Analytics</h3><p>Besant Technologies, Chennai</p><strong>Python &amp; Data Analytics</strong></article>
+      <article class="journey-card"><div class="journey-icon"><i class="fa-solid fa-certificate"></i></div><div class="journey-date">CERTIFICATE</div><span class="journey-type">DIGITAL PRODUCTIVITY</span><h3>NIIT Foundation</h3><p>Digital Productivity learning</p><strong>Certificate / course details can be added here</strong></article>
+      <article class="journey-card"><div class="journey-icon"><i class="fa-solid fa-award"></i></div><div class="journey-date">COURSE</div><span class="journey-type">ANALYTICS</span><h3>Novitech Data Analytics</h3><p>Additional learning</p><strong>Update this card with the final course status</strong></article>
+    </div><div class="school-note-card"><b>Higher Secondary (HSC)</b><span>Govt. Higher Secondary School, Andimadam · 2022–2023</span><strong>84%</strong></div></div></section>
 
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
+
+    <section class="section contact-section" id="contact"><div class="section-wrap contact-wrap"><div class="contact-main"><p class="section-label"><span>05</span> CONTACT</p><h2>Let's connect<br>&amp; <span>collaborate.</span></h2><p>I'm looking for entry-level opportunities, internships, and collaborations in data analytics. Feel free to reach out!</p><a class="btn btn-primary" href="mailto:sindhujasankaran08@gmail.com">Send me an Email <i class="fa-solid fa-arrow-right"></i></a></div><div class="contact-links"><a href="mailto:sindhujasankaran08@gmail.com"><i class="fa-solid fa-envelope"></i><span><small>EMAIL</small><b>sindhujasankaran08@gmail.com</b></span></a><a href="https://linkedin.com/in/sindhuja-s-645127381" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i><span><small>LINKEDIN</small><b>Update profile URL</b></span></a><a href="https://github.com/Sindhujasankaran2005" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i><span><small>GITHUB</small><b>Sindhujasankaran2005</b></span></a></div></div></section>
+  </main>
+  <footer class="footer"><div class="footer-wrap"><a class="logo" href="#home">SS<span>.</span></a><p>© <span id="year"></span> Sindhuja S. All rights reserved.</p><span class="footer-tag">Data · Logic · Insights</span><a class="back-top" href="#home">BACK TO TOP ↑</a></div></footer>
+  <script src="script.js"></script>
 </body>
 </html>
